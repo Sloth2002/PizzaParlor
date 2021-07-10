@@ -1,1 +1,56 @@
 @charset "UTF-8";
+
+body {
+  margin: auto;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background-image: url(shop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+.flex-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #0d0d0d;
+}
+
+.flex-nav > .nav-box {
+  background-color: #262626;
+  width: 200px;
+  margin: 0px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 30px;
+  color: white;
+  border: 2px black solid;
+}
+
+.flex-nav > .nav-box:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 568px) {
+  .flex-nav {
+    flex-direction: column;
+  }
+  .flex-nav > .nav-box {
+    width: auto;
+  }
+}
