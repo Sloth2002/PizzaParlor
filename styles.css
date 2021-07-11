@@ -108,6 +108,37 @@ img.socials {
   width: 30%;
 }
 
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 30px;
+}
+
+div.container {
+  padding: 10px;
+}
+
+img.pizza {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 568px) {
   .flex-nav {
     flex-direction: column;
@@ -123,5 +154,9 @@ img.socials {
 
   .quote, .select {
     margin: auto;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: center;
   }
 }
