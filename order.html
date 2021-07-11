@@ -18,9 +18,65 @@
     </header>
     <div class="flex-nav">
       <div class="nav-box">Home</div>
-      <div class="nav-box"><a href="menu.html">Menu</a></div>
-      <div class="nav-box"><a href="order.html">Order Online</a></div>
+      <div class="nav-box"><a class="nav" href="menu.html">Menu</a></div>
+      <div class="nav-box"><a class="nav" href="order.html">Order Online</a></div>
       <div class="nav-box">Our Location</div>
+    </div>
+    <div class="orderpage">
+      <div class="select">
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend>Enter Your Selection</legend>
+            <label for="fname">
+              Name:
+              <input class="contact" autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+            </label>
+
+            <label for="phone">
+              Phone:
+              <input class="contact" type="tel" name="phone" id="phone" required placeholder="(000)000-0000"/>
+            </label>
+            <label for="pizza">
+              Select a pizza:
+              <select name="pizza" id="pizza">
+                <option value="option">option</option>
+                <option value="option">option</option>
+                <option value="option">option</option>
+                <option value="option">option</option>
+                <option value="option">option</option>
+                <option value="option">option</option>
+              </select>
+            </label>
+            <label for="num">
+              How many?:
+              <select name="num" id="num">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+          </fieldset>
+          <input class="submit" type="submit" value="submit"/>
+        </form>
+      </div>
+      <div class="media">
+        <div class="quote">
+          <blockquote>
+            <p><img class="star" src="goldstar.png" alt="4 stars"><img class="star" src="goldstar.png" alt="4 stars"><img class="star" src="goldstar.png" alt="4 stars"><img class="star" src="goldstar.png" alt="4 stars"></p>
+            <p class="i"><strong>The pizza was super, and the service was perfect!</strong></p>
+            <p>Brandon Cuartas</p>
+            <p>7/5/2020</p>
+          </blockquote>
+        </div>
+        <div class="social">
+          <h2>Connect with us</h2>
+          <p>for any support or any questions</p>
+          <p>email us at <a href="mailto:someone@example.com">support@cheechspizza.com</a></p>
+          <img class="socials" src="socials.png" alt="Social Links">
+        </div>
+      </div>
     </div>
   </body>
 </html>
